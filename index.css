@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color:  hsl(226, 43%, 10%);
+    color: white;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(226, 43%, 10%);
+}
+.content{
+    height: 60%;
+    width: 68%;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2);
+    border-radius: 20px;
+    grid-template-areas: 
+    "one two three four"
+    "one five six seven"
+    ;
+    gap:20px;
+}
+.card{
+    border-radius: 12px;
+    display: grid;
+
+
+}
+.card1{
+    grid-area: one;
+    background-color:   hsl(235, 46%, 20%);
+
+}
+.card2{
+    grid-area: two;
+    background-color:  hsl(15, 100%, 70%);
+}
+.card3{
+    grid-area: three;
+    background-color: hsl(195, 74%, 62%);
+}
+.card4{
+    grid-area: four;
+    background-color: hsl(348, 100%, 68%);
+}
+.card5{
+    grid-area: five;
+    background-color: hsl(145, 58%, 55%);
+}
+.card6{
+    grid-area: six;
+    background-color: hsl(264, 64%, 52%);
+}
+.card7{
+    grid-area: seven;
+    background-color: hsl(43, 84%, 65%);
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 12px;
+    padding: 5px;
+    padding-bottom: 80px;
+
+
+
+}
+.profile img{
+    margin-top: 20px;
+    position: relative;
+    left: 5%;
+    margin-bottom: 25px;
+ 
+}
+.report-name{
+    margin-left: 30px;
+
+
+}
+.report-name h2{
+    font-weight: 400;
+}
+.report-name h6{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+
+    
+}
+.routes ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+
+}
+.routes ul a{
+    text-decoration: none;
+    color: inherit;
+}
+.card .top img{
+    height: 50px;
+    position: relative;
+    margin-right: 0px;
+    z-index: -1;
+    margin-left: 65%;
+    
+
+}
+.card-inner{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.card .top{
+    width: 100%;
+    height: 20%;
+    z-index: 0;
+    position: relative;
+}
+.card .bottom{
+    z-index: 9 !important;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: -5px;
+    border-radius: 12px;
+    height: 85%;
+}
+.head-icon{
+    padding-top: 20px;
+    display: flex;
+    column-gap: 60%;
+    margin-left: 15px;
+
+   
+}
+.icon{
+    height: 0.1%;
+}
+.hours{
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 8%;
+    font-size: 200%;
+}
+.previous{
+    margin-top: 10%;
+    margin-left: 8%;
+
+}
+
+
+
+
+
+
+
+/**media devices*/
+@media only screen and (max-width: 768px) {
+    .container{
+        height: auto;
+        margin: 0;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+
+    }
+    .card{
+        height: auto;
+        width: 100%;
+    }
+    .profile{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    
+    }
+    .report-name h2{
+        display: flex;
+        gap: 5px;
+    }
+    .routes ul{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+        gap: 20px;
+    
+    }
+   
+    
+    
+    
+    
+  }
+
